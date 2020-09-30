@@ -22,18 +22,16 @@
     <main>
         <section class="main-section">
             <img class="main-logo" src="assets/alchemy-logo.png"/>
-           
-            <h2>Welcome to Approximate-an-Integer!</h2>
-            <p id="rules">Come one, come all!  You have four chances to guess a number between 1 and 20!</p>
-            <input id="user-number" type="number">
-            <button id="submit-guess-button">Submit your guess!</button>
 
-            <span id="wins"></span>
-            <span id="losses"></span>
-            <span id="guesses-remaining">You have 4 guesses left!</span>
+            <h2>Welcome to Approximate-an-Integer!</h2>
+            <p>You have four chances to guess a number between 1 and 20!</p>
+            <input id="user-input" type="number">
+            <button class="hidden" id="submit-guess-button">Submit your guess!</button>
             
             <span id="guess-results-message"></span>
-            <div id="end-or-lose-message"></div>
+            <div>You have <span id="guesses-remaining">4</span> guesses left!</div>
+            <div id="win-or-lose-message"></div>
+            <input type = button id="game-reset-button" value="Reset the Game">
         </section>
     </main>
     <footer>

@@ -99,12 +99,19 @@ p {
     margin: var(--gutter);
 }
 
-span {
+div {
     font-family: 'Bangers', cursive;
     font-size: 1.9rem;
     color: violet;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
     margin: var(--gutter);
+}
+
+span {
+    font-family: 'Bangers', cursive;
+    font-size: 1.9rem;
+    color: violet;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
 }
 
 button {
@@ -113,6 +120,11 @@ button {
     color:black;
     background-color: palevioletred;
     margin: var(--gutter);
+}
+
+#guesses-remaining {
+    text-decoration-line: underline;
+    font-size: 2rem;
 }
 
 footer {
@@ -125,8 +137,11 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+/* .hidden {
+    display: none;
+} */
+
+@keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
