@@ -1,17 +1,17 @@
 
 body {
-    --color1: #ffffff;
+    /* --color1: #ffffff;
     --color2: #ffffff;
     --color3: #ffffff;
     --color4: #ffffff;
-    --color5: #ffffff;
+    --color5: #ffffff; */
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
+    --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --color5: hsla(170, 28%, 95%, 1);
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -26,6 +26,8 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url("/assets/nums2.PNG");
+    background-blend-mode: lighten;
 }
 
 main {
@@ -68,7 +70,8 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -84,16 +87,46 @@ header img {
     height: var(--header-height);
 }
 
-
-
 content {
     width: 80%;
 }
 
 p {
+    font-family: 'Bangers', cursive;
+    font-size: 1.9rem;
+    color: steelblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
     margin: var(--gutter);
 }
-  
+
+div {
+    font-family: 'Bangers', cursive;
+    font-size: 1.9rem;
+    color: violet;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
+    margin: var(--gutter);
+}
+
+span {
+    font-family: 'Bangers', cursive;
+    font-size: 1.9rem;
+    color: violet;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
+}
+
+button {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    color:black;
+    background-color: palevioletred;
+    margin: var(--gutter);
+}
+
+#guesses-remaining {
+    text-decoration-line: underline;
+    font-size: 2rem;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -104,8 +137,11 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+/* .hidden {
+    display: none;
+} */
+
+@keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
